@@ -1,0 +1,8 @@
+#content {
+  padding: -5em;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

@@ -4,13 +4,14 @@
   <head>
     <title>Bonjour</title>
     <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
     <!-- Semantic UI -->
     <link rel="stylesheet" type="text/css" href="../stylesheets/semantic.min.css">
     <script type="text/javascript" src="../javascripts/semantic.min.js"></script>
-    <!--
+    <!-- Semantic sidebar -->
     <link rel="stylesheet" type="text/css" href="../stylesheets/sidebar.css">
     <script type="text/javascript" src="../javascripts/sidebar.js"></script>
-    -->
+    
     <!-- Semantic icon -->
     <link rel="stylesheet" type="text/css" href="../semantic-ui-icon/icon.min.css">
     <script type="text/javascript" scr="../semantic-ui-icon/package.js"></script>
@@ -19,27 +20,24 @@
     <!-- Semantic UI's JQuery -->
     <script type="text/javascript">
       $(document).ready(function(){
-        $('.context.example .ui.sidebar')
-        .sidebar({
-              context: $('.context.example .bottom.segment')
-                
-        })
-          .sidebar('attach events', '.context.example .menu .item')
-          ;
+        $('.ui.labeled.icon.sidebar').sidebar('toggle');
       });
     </script>
+
   </head>
 
-    <div class="ui vertical inverted labeled icon left overlay sidebar menu">
+  <body>
+    <!--
+    <div class="ui top attached demo menu">
       <a class="item">
         <i class="sidebar icon"></i>
         Menu
       </a>
     </div>
-    <div class="ui bottom attached segment pushable">
-      <div class="ui inverted labeled icon left inline vertical slidebar menu">
-        <a class="item">
-          <i class="home icon"></i>
+    -->
+      <div class="ui inverted labeled icon left vertical visible sidebar menu" id="sidebar">
+        <a class="item" href="/">
+          <i class="blue home icon"></i>
           Home
         </a>
         <a class="item">
@@ -59,14 +57,29 @@
           Travel
         </a>
       </div>
-  <body>
-      <div class="pusher">
+      <div class="pusher" id="content">
         <div class="ui basic segment">
-          <h2>Bonjour</h2>
+          <h1>Bonjour</h1>
 <p>What's New</p>
-<ul>
+<div class="ui list">
   
-</ul>
+    <div class="item">
+       <div class="content">
+        <h2 class="ui header">
+          <i class="teal quote left icon"></i>
+          <div class="content">
+            <a href="/2015/08/04/aloha.html">
+              <h2>Hello, world</h2>
+            </a>
+        </div>
+        <h6 align="center">04 Aug 2015</h6>
+        <div class="description">
+          <article>Lying on the bed of Rothenberg, Germany, with body little hurt...</article>
+        </div>
+      </div>
+    </div>
+  
+</div>
 
         </div>
         <div class="ui buttons">
@@ -75,7 +88,6 @@
           <button class="ui positive button">Like</button>
         </div>
       </div>
-    </div>
   </body>
 
 </html>
