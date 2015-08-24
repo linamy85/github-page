@@ -1,2 +1,9 @@
+# some basic info
+name: C'est la vie
+
+# handing reading
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,md"
+
 baseurl: ""
 excerpt_separator: <!--more--> #
