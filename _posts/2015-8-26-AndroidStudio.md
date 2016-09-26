@@ -1,7 +1,11 @@
 ---
 layout: post
 title: Android Studio
-type: note
+crawlertitle: "How to use jekyll"
+summary: "Installation of Android Studio"
+date:   2015-08-26 22:04:10 +0700
+tags: 'tech'
+author: Amy Lin
 excerpt: 下午搞了Android Studio頗久，就是沒辦法將手機連接上我的ubuntu...
 ---
 
