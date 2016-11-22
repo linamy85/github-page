@@ -3,7 +3,7 @@ layout: post
 bg: "duck.jpg"
 title:  "1st day -- Grace Hopper Celebration"
 crawlertitle: "1st day -- Grace Hopper Celebration"
-summary: "First time surf seriously, but turned out surfed by ocean."
+summary: "Finally got here, totally a new world!"
 date:   2016-11-21 18:58:47 +0800
 categories: life
 tags: 'life'

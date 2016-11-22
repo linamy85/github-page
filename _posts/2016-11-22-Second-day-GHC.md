@@ -3,7 +3,7 @@ layout: post
 bg: "duck.jpg"
 title:  "2nd day -- Grace Hopper Celebration"
 crawlertitle: "2nd day -- Grace Hopper Celebration"
-summary: "First time surf seriously, but turned out surfed by ocean."
+summary: "Tired swag fighting day"
 date:   2016-11-21 18:58:47 +0800
 categories: life
 tags: 'life'
