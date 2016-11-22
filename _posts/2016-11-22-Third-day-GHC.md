@@ -1,7 +1,7 @@
 ---
 layout: post
 bg: "duck.jpg"
-title:  "2nd day -- Grace Hopper Celebration"
+title:  "3rd day -- Grace Hopper Celebration"
 crawlertitle: "3rd day -- Grace Hopper Celebration"
 summary: "Friending day."
 date:   2016-11-21 18:58:47 +0800
