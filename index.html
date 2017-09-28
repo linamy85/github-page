@@ -1,14 +1,346 @@
----
-bg: "girl_shadow.jpg"
-layout: default
-crawlertitle: "C'est la vie. -- Amy Lin"
-title: "C'est la vie."
-summary: "Trip with me."
----
+<!--
+Author: Yu Hsuan Lin
+Power By: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
 
-{% for post in site.posts limit: 5 %}
-  <article class="index-page">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {{ post.excerpt }}
-  </article>
-{% endfor %}
+<head>
+    <title>Yu Hsuan (Amy) Lin's Homepage</title>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript">
+    addEventListener("load", function() {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+    </script>
+    <!--- Jquery -->
+    <!--- Goog Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- Header Starts Here -->
+    <div class="header">
+        <div class="container">
+            <div class="header-profile">
+                <img src="images/linkedin_profile.jpg" alt="Profile" class="profile-circular" />
+            </div>
+        </div>
+    </div>
+    <div class="header-top">
+        <h2>Yu Hsuan Lin</h2>
+        <small>Software Engineering intern | Student<br/>National Taiwan University</small>
+    </div>
+    <!-- Header Ends Here -->
+    <!-- About Me Starts Here -->
+    <div class="about">
+        <div class="container">
+            <div class="about-top">
+                <h3 class="top-title">About Me</h3>
+                <span class="line"></span>
+                <p class="about-p about-me">Dream big, do big.</p>
+                <p class="about-me">Challenge myself to learn broader and deeper in what I love, in order to become a better person. Plus, curiosity is always my friend, it attracts me to explore more about this world and discover interesting things.</p>
+                <p></p>
+                <div class="row about-row">
+                    <div class="col-md-4 about-row-column">
+                        <ul class="about-details">
+                            <li>
+                                <p>Birthday: <span>Jun, 22, 1996</span></p>
+                            </li>
+                            <li>
+                                <p>Phone: <span>(+886) 909159622</span></p>
+                            </li>
+                            <li>
+                                <p>Email: <span><a href="mailto:linamy85@gmail.com">linamy85 [at] gmail.com</a></span></p>
+                            </li>
+                            <li>
+                                <p>Website: <span><a href="http://linamy85.github.com/">linamy85.github.com</a></span></p>
+                            </li>
+                            <li>
+                                <p>Location: <span>Taipei, Taiwan</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 about-row-column">
+                        <h3>Computer Science Skills</h3>
+                        <div class="cs-skill">
+                            <img src="images/cplus.png" class="cplus">
+                            <img src="images/python.jpeg" class="python">
+                            <img src="images/js.png" class="js">
+                            <img src="images/java.png" class="java">
+                            <img src="images/data_science.png" class="data-science">
+                        </div>
+                        <a target="_blank" href="http://bit.ly/amy17resume" class="download"><span></span>Download Resume</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Me Ends Here -->
+    <!-- Experience Starts Here -->
+    <div class="experience">
+        <div class="container">
+            <div class="exp-top">
+                <h3 class="top-title">About</h3>
+                <span class="line"></span>
+            </div>
+            <div class="exp-devide">
+                <h4>Experience</h4>
+                <span class="devide-line">
+                </span>
+                <label class="bag"></label>
+                <div class="exp-devide-grid-right">
+                    <h5>SOFTWARE ENGINEERING INTERN - Google, Geo</h5>
+                    <small>Jun 2017 . Sep 2017</small>
+                    <p>Designed user interface and implemented the front-end and back-end server of holiday feature on Google My Business editor in order to encourage merchants to update business hours of upcoming holiday and maintain a better customer relationship through Map & Search.</p>
+                </div>
+                <div class="exp-devide-grid-left">
+                    <h5>ADMINISTRATOR - NTU, Network Admin Team</h5>
+                    <small>2017 . Current</small>
+                    <p>Manage a team of 20 people to maintain the quality of network which serves over a thousand users simultaneously. Facilitate weekly meetings with all team members and teachers, and collaborate with System Administration Team to enhance user experience.</p>
+                </div>
+                <div class="exp-devide-grid-rightb">
+                    <h5>SOFTWARE ENGINEERING INTERN - Ucfunnel</h5>
+                    <small>2016 . Current</small>
+                    <p>Conducted content recommendation system for publisher, aimed to strengthen the connection between publishers and readers, and furthermore accurate prediction by data mining and natural language processing of user behavior. Founded the thorough structure of back-end system and entered production stage in January 2017.</p>
+                </div>
+                <div class="exp-devide-grid-leftb">
+                    <h5>WIRELESS ADMINISTRATOR - NTU, Network Admin Team</h5>
+                    <small>2015 . 2017</small>
+                    <p>Conducted network diagnoses and analysis of potential issues regularly, and cultivated practical knowledges and experiences from discussion by teamwork.</p>
+                </div>
+                <div class="exp-devide-grid-rightc">
+                    <h5>ENGINEER PRACTICUM INTERN - Google, ChromeOS</h5>
+                    <small>2016</small>
+                    <p>• Constructed audio loopback latency auto test for ChromeOS to detect decreased performance resulted from audio-relating code modification.</p>
+                    <p>• Developed portable audio factory test ChromeOS factory team, expanded the test from Chromebook-only to multiple devices such as ARC++ & Android, and open sourced in chromium.</p>
+                </div>
+            </div>
+            <div class="exp-devide education">
+                <h4>Education</h4>
+                <!-- <span class="devide-line"></span> -->
+                <div class="bachelor">
+                    <h5><label class="book"></label>BACHELORS - Computer Science & Information Engineering</h5>
+                    <small>National Taiwan University - 2014 . 2018</small>
+                    <p>• Presidential Award 1% (current GPA 4.3/4.3)</p>
+                    <p>• Best Project Award of Machine Discovery Final: Global Migration Prediction</p>
+                    <p>• Related courses: Advanced Human Computer Interaction Research, Web Retrieval and Mining, Cryptography Analysis, etc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- Experience Ends Here -->
+    <!--- Skills Starts Here -->
+    <div class="skills">
+        <div class="container">
+            <div class="skills-top">
+                <h3 class="top-title">Skills</h3>
+                <span class="line"></span>
+                <div class="row skill-grids text-center">
+                    <div class="col-md-3 skill-column">
+                        <div class="skill-grid">
+                            <div class="circle" id="circles-1"></div>
+                            <h3>CODING</h3>
+                            <p>Languages: C/C++, Python, JavaScript, Java.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 skill-column">
+                        <div class="skill-grid">
+                            <div class="circle" id="circles-2"></div>
+                            <h3>DATA SCIENCE</h3>
+                            <p>Fields: Natural Language Processing, Deep Learning, Data Mining</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 skill-column">
+                        <div class="skill-grid">
+                            <div class="circle" id="circles-3"></div>
+                            <h3>PARALLEL PROGRAMMING</h3>
+                            <p>When dealing with a tons of data, the best way to process it is acceleration.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 skill-column">
+                        <div class="skill-grid">
+                            <div class="circle" id="circles-4"></div>
+                            <h3>CURIOSITY</h3>
+                            <p>Explore the world with curiosity to learn deeper and experience broader.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!--- Skill Script -->
+        <script type="text/javascript" src="js/circles.js"></script>
+        <script>
+        var colors = [
+            ['#fff', '#2980b9'],
+            ['#fff', '#2980b9'],
+            ['#fff', '#2980b9'],
+            ['#fff', '#2980b9']
+        ];
+        var numbers = [80, 60, 60, 100];
+        for (var i = 0; i < 4; i++) {
+            var child = document.getElementById('circles-' + (i + 1)),
+                percentage = 50 + (i * 10);
+
+            Circles.create({
+                id: child.id,
+                percentage: numbers[i],
+                radius: 80,
+                width: 15,
+                number: numbers[i],
+                text: '%',
+                colors: colors[i]
+            });
+        }
+        </script>
+        <!--- Skill Script -->
+    </div>
+    <!--- Skills Ends Here -->
+    <!-- Social Media Connections -->
+    <div class="social-media">
+        <div class="container">
+            <div class="social-media-top">
+                <h3 class="top-title">SOCIAL MEDIA CONNECTIONS</h3>
+                <span class="line"></span>
+                <ul class="social">
+                    <li>
+                        <a class="fb" href="https://facebook.com/linamy85"></a>
+                    </li>
+                    <!-- <li>
+                        <a class="tw"></a>
+                    </li> -->
+                    <li>
+                        <a class="li" href="https://www.linkedin.com/in/yu-hsuan-lin-9b218710a/"></a>
+                    </li>
+                    <!-- <li>
+                        <a class="yt"></a>
+                    </li> -->
+                    <li>
+                        <a class="ca" href="https://github.com/linamy85/"></a>
+                    </li>
+                    <!-- <li>
+                       <a class="ph"></a>
+                    </li> -->
+                    <!-- <li>
+                        <a class="gp"></a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Social Media Connections -->
+    <!--- Awards Starts Here -->
+    <div class="awards">
+        <div class="container">
+            <div class="awards-top">
+                <h3 class="top-title">AWARDS & ACHIEVEMENTS</h3>
+                <span class="line"></span>
+                <div class="row award-row">
+                    <div class="col-md-3 award-column">
+                        <i class="award"></i>
+                        <h5>3</h5>
+                        <small>Awards Won!</small>
+                        <!-- Award list:
+                            - 3 Presidential Award (GPA 4.29-4.3/4.3)
+                        -->
+                    </div>
+                    <div class="col-md-3 award-column">
+                        <i class="project"></i>
+                        <h5>16</h5>
+                        <small>PROJECTS DONE</small>
+                        <!-- Project list:
+                            - AUC oriented Bidirectional LSTM-CRF Models toIdentify Algorithms Described in an Abstract (MSLab)
+                            - Socially Acceptable Display of Text via Augmented Reality during 1-on-1 Conversations (VRST)
+                            - DSA Final Project
+                            - FOOP Final: Desktop game Project
+                            - CSIE Night Website game
+                            - HackNTU Website x 2
+                            - Information Retrieval Final Project
+                            - NTU ArtFest game website: realtime streaming & control
+                            - 2 intern project in Google ChromeOS
+                            - Holiday project in Google My Business
+                            - InternLens website (unfinished...)
+                            - Content recommendation system @ UcFunnel
+                            - NASA Final Project: pressure test of PfSence
+                            - Network fundamental course: online chatroom (via socket.io)
+                        -->
+                    </div>
+                    <div class="col-md-3 award-column">
+                        <i class="client"></i>
+                        <h5>106</h5>
+                        <small>TOEFL Score</small>
+                    </div>
+                    <div class="col-md-3 award-column">
+                        <i class="cups"></i>
+                        <h5>1000</h5>
+                        <small>DAYS OF DEVELOPING</small>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- Awards Ends Here -->
+    <!--- Contact Starts Here -->
+    <div class="contact">
+        <div class="container">
+            <div class="contact-top">
+                <h3 class="top-title">Contact Me</h3>
+                <span class="line"></span>
+                <p>Amy is looking forward to hear from you. Please do not hesitate :)</p>
+                <div class="row contact-row">
+                    <div class="col-md-4 contact-column">
+                        <i class="loc"></i>
+                        <p>Taipei, Taiwan</p>
+                    </div>
+                    <div class="col-md-4 contact-column">
+                        <i class="mail"></i>
+                        <p><a href="mailto:linamy85@gmail.com">linamy85@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-4 contact-column">
+                        <i class="phone"></i>
+                        <p>(+886)909-159622</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <form class="contact-form" method="POST" action="http://formspree.io/linamy85+form@gmail.com">
+                    <div class="text">
+                        <input name="name" type="text" placeholder="Your Name..">
+                    </div>
+                    <div class="text">
+                        <input type="email" name="email" placeholder="Your Email..">
+                    </div>
+                    <div class="text">
+                        <textarea name="message" value="Message:" placeholder="Your Message..."></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" value="linamy85.github.io New contact!" />
+                    <div class="text">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--- Contact Ends Here -->
+    <!--- Footer Starts Here -->
+    <div class="footer">
+        <div class="container">
+            <p class="copyright">Yu Hsuan Lin 2017</p>
+        </div>
+    </div>
+    <!--- Footer Ends Here -->
+</body>
+
+</html>
