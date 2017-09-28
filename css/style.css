@@ -44,6 +44,7 @@ body {
 }
 
 .header-profile {
+    /* TODO: Find a better way to align picture in the center */
     position: absolute;
     bottom: -26%;
     left: 42%;
@@ -163,8 +164,8 @@ ul.hoby li {
 }
 
 .profile-circular {
-    width: 200px;
-    height: 200px;
+    width: 65%;
+    height: 65%;
     background-size: cover;
     display: block;
     border-radius: 50%;
@@ -444,8 +445,12 @@ label.book {
     color: #7f8a90;
 }
 
+.circles-text {
+    font-size: 40%;
+}
 
-/*--- Skills Starts Here ----*/
+
+/*--- Skills Ends Here ----*/
 
 
 /*--- social Media Starts Here ---*/
@@ -468,7 +473,7 @@ ul.social li {
     display: inline-block;
 }
 
-ul.social li i {
+ul.social li a {
     width: 84px;
     height: 84px;
     background: url(../images/social-icons.png)no-repeat;
@@ -476,35 +481,35 @@ ul.social li i {
     cursor: pointer;
 }
 
-ul.social li i:hover {
+ul.social li a:hover {
     opacity: 0.5;
 }
 
-ul.social li i.fb {
+ul.social li a.fb {
     background-position: 0px 0px;
 }
 
-ul.social li i.tw {
+ul.social li a.tw {
     background-position: -96px 0px;
 }
 
-ul.social li i.li {
+ul.social li a.li {
     background-position: -191px 0px;
 }
 
-ul.social li i.yt {
+ul.social li a.yt {
     background-position: -292px 0px;
 }
 
-ul.social li i.ca {
+ul.social li a.ca {
     background-position: -390px 0px;
 }
 
-ul.social li i.ph {
+ul.social li a.ph {
     background-position: -487px 0px;
 }
 
-ul.social li i.gp {
+ul.social li a.gp {
     background-position: -585px 0px;
 }
 
@@ -1009,31 +1014,10 @@ p.copyright a:hover {
 
 /*--- Media Queries Starts Here ---*/
 
-@media (max-width:1024px) {
-    .header {
-        min-height: 300px;
-    }
-    .header-profile img {
-        width: 80%;
-        height: 80%;
-    }
+@media (max-width:1199px) {
     .header-profile {
-        left: 40%;
-    }
-    ul.hoby li {
-        margin: 1em 0em;
-    }
-    ul.hoby {
-        margin-bottom: 3em;
-    }
-    .about {
-        margin: 2em 0;
-    }
-    label.bag {
-        left: 32.7em;
-    }
-    .slider-top p {
-        font-size: 16px;
+        left: 41%;
+        margin-bottom: 15px;
     }
     .exp-devide-grid-right {
         left: 36.2em;
@@ -1063,14 +1047,40 @@ p.copyright a:hover {
         height: 610px;
     }
     label.book {
+        left: 32.5em;
+    }
+    label.bag {
         left: 32.7em;
+    }
+}
+
+@media (max-width:1024px) {
+    .header-profile {
+        left: 40%;
+    }
+    .header {
+        min-height: 300px;
+    }
+    ul.hoby li {
+        margin: 1em 0em;
+    }
+    ul.hoby {
+        margin-bottom: 3em;
+    }
+    .about {
+        margin: 2em 0;
+    }
+    .slider-top p {
+        font-size: 16px;
     }
 }
 
 @media (max-width:991px) {
     .header-profile img {
         width: 60%;
-        width: 60%;
+    }
+    .header-profile {
+        left: 40.5%;
     }
     .header {
         min-height: 192px;
@@ -1145,18 +1155,33 @@ p.copyright a:hover {
     .skill-grids {
         padding: 3em 0 0;
     }
+    .about-details {
+        padding: 8px;
+    }
 }
 
-@media (max-width:640px) {
+@media (max-width:865px) {
+    .header-profile {
+        left: 39.5%;
+    }
+}
+
+@media (max-width:820px) {
+    .header-profile {
+        left: 38.5%;
+    }
+}
+
+@media (max-width:768px) {
     .header-profile img {
         width: 55%;
         height: 55%;
     }
-    .header-profile {
-        left: 39%;
-    }
     .header-top h2 {
         font-size: 25px;
+    }
+    .header-profile {
+        left: 37%;
     }
     .cs-skill img {
         height: 80px;
@@ -1168,7 +1193,7 @@ p.copyright a:hover {
         text-align: left;
     }
     .exp-devide h4 {
-        width: 19%;
+        width: 140px;
         margin: 0;
     }
     .education {
@@ -1188,7 +1213,8 @@ p.copyright a:hover {
         font-size: 14px;
     }
     .exp-devide h4 {
-        font-size: 16px
+        font-size: 16px;
+        width: 160px;
     }
     label.bag,
     label.book {
@@ -1255,10 +1281,19 @@ p.copyright a:hover {
         font-size: 19px;
         margin: 0;
     }
+    ul.about-details {
+        padding-bottom: 2px;
+    }
+    ul.about-details li p {
+        font-size: 16px;
+    }
+    ul.about-details li {
+        margin: 1em 0;
+    }
     .skills {
         margin: 2em 0 0;
     }
-    ul.social li i {
+    ul.social li a {
         width: 80px;
         height: 80px
     }
@@ -1266,6 +1301,36 @@ p.copyright a:hover {
     .text input[type="email"],
     .text textarea {
         width: 80%;
+    }
+}
+
+@media (max-width:590px) {
+    .header-profile {
+        left: 36%;
+    }
+}
+
+@media (max-width: 560px) {
+    .education {
+        margin-top: 585px;
+    }
+    .experience {
+        min-height: 990px;
+    }
+}
+
+@media (max-width:530px) {
+    .header-profile {
+        left: 35%;
+    }
+    .education {
+        margin-top: 620px;
+    }
+    span.devide-line {
+        height: 610px;
+    }
+    .experience {
+        min-height: 1010px;
     }
 }
 
@@ -1303,26 +1368,23 @@ p.copyright a:hover {
     h3.top-title {
         font-size: 20px;
     }
-    ul.about-details li p {
-        font-size: 16px;
-    }
-    ul.about-details li {
-        margin: 1em 0;
-    }
     a.download {
         font-size: 12px;
     }
     .exp-devide h4 {
         font-size: 14px;
-        width: 23%;
+        width: 105px;
     }
     label.bag,
     label.book {
         left: 7%;
     }
+    .exp-devide-grid-right {
+        left: 17.9%;
+    }
     .exp-devide-grid-left {
         top: 18em;
-        left: 17.8%;
+        left: 17.9%;
     }
     .exp-devide-grid-rightb {
         top: 30em;
@@ -1333,7 +1395,7 @@ p.copyright a:hover {
         text-align: left;
         position: absolute;
         top: 15em;
-        left: 17.8%;
+        left: 17.9%;
     }
     .exp-devide-grid-rightc {
         top: 43em;
@@ -1352,32 +1414,32 @@ p.copyright a:hover {
         height: 748px;
     }
     .experience {
-        min-height: 1120px;
+        min-height: 1154px;
     }
     .skill-grid h3 {
         font-size: 16px;
     }
-    ul.social li i {
+    ul.social li a {
         width: 50px;
         height: 50px;
         background-size: 773%;
     }
-    ul.social li i.tw {
+    ul.social li a.tw {
         background-position: -56px 0px;
     }
-    ul.social li i.li {
+    ul.social li a.li {
         background-position: -111px 0px;
     }
-    ul.social li i.yt {
+    ul.social li a.yt {
         background-position: -168px 0px;
     }
-    ul.social li i.ca {
+    ul.social li a.ca {
         background-position: -225px 0px;
     }
-    ul.social li i.ph {
+    ul.social li a.ph {
         background-position: -283px 0px;
     }
-    ul.social li i.gp {
+    ul.social li a.gp {
         background-position: -339px 0px;
     }
     ul.social {
@@ -1450,7 +1512,7 @@ p.copyright a:hover {
     }
     .exp-devide h4 {
         font-size: 14px;
-        width: 37%;
+        width: 105px;
     }
     .cs-skill img {
         height: 60px;

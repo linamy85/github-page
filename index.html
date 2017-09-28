@@ -61,7 +61,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <p>Phone: <span>(+886) 909159622</span></p>
                             </li>
                             <li>
-                                <p>Email: <span><a href="mailto:linamy85@gmail.com">linamy85@gmail.com</a></span></p>
+                                <p>Email: <span><a href="mailto:linamy85@gmail.com">linamy85 [at] gmail.com</a></span></p>
                             </li>
                             <li>
                                 <p>Website: <span><a href="http://linamy85.github.com/">linamy85.github.com</a></span></p>
@@ -151,32 +151,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="col-md-3 skill-column">
                         <div class="skill-grid">
                             <div class="circle" id="circles-1"></div>
-                            <h3>PHOTOSHOP</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h3>CODING</h3>
+                            <p>Languages: C/C++, Python, JavaScript, Java.</p>
                         </div>
                     </div>
                     <div class="col-md-3 skill-column">
                         <div class="skill-grid">
                             <div class="circle" id="circles-2"></div>
-                            <h3>ILLUSTRATOR</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h3>DATA SCIENCE</h3>
+                            <p>Fields: Natural Language Processing, Deep Learning, Data Mining</p>
                         </div>
                     </div>
                     <div class="col-md-3 skill-column">
                         <div class="skill-grid">
                             <div class="circle" id="circles-3"></div>
-                            <h3>HTML/CSS</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h3>PARALLEL PROGRAMMING</h3>
+                            <p>When dealing with a tons of data, the best way to process it is acceleration.</p>
                         </div>
                     </div>
                     <div class="col-md-3 skill-column">
                         <div class="skill-grid">
                             <div class="circle" id="circles-4"></div>
-                            <h3>JAVASCRIPT</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h3>CURIOSITY</h3>
+                            <p>Explore the world with curiosity to learn deeper and experience broader.</p>
                         </div>
                     </div>
-                    <div class="clearfix"> </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </div>
@@ -189,18 +189,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             ['#fff', '#2980b9'],
             ['#fff', '#2980b9']
         ];
-        for (var i = 1; i <= 6; i++) {
-            var child = document.getElementById('circles-' + i),
+        var numbers = [80, 60, 60, 100];
+        for (var i = 0; i < 4; i++) {
+            var child = document.getElementById('circles-' + (i + 1)),
                 percentage = 50 + (i * 10);
 
             Circles.create({
                 id: child.id,
-                percentage: percentage,
+                percentage: numbers[i],
                 radius: 80,
                 width: 15,
-                number: percentage / 10,
+                number: numbers[i],
                 text: '%',
-                colors: colors[i - 1]
+                colors: colors[i]
             });
         }
         </script>
@@ -214,13 +215,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <h3 class="top-title">SOCIAL MEDIA CONNECTIONS</h3>
                 <span class="line"></span>
                 <ul class="social">
-                    <li><i class="fb"></i></li>
-                    <li><i class="tw"></i></li>
-                    <li><i class="li"></i></li>
-                    <li><i class="yt"></i></li>
-                    <li><i class="ca"></i></li>
-                    <li><i class="ph"></i></li>
-                    <li><i class="gp"></i></li>
+                    <li>
+                        <a class="fb" href="https://facebook.com/linamy85"></a>
+                    </li>
+                    <!-- <li>
+                        <a class="tw"></a>
+                    </li> -->
+                    <li>
+                        <a class="li" href="https://www.linkedin.com/in/yu-hsuan-lin-9b218710a/"></a>
+                    </li>
+                    <!-- <li>
+                        <a class="yt"></a>
+                    </li> -->
+                    <li>
+                        <a class="ca" href="https://github.com/linamy85/"></a>
+                    </li>
+                    <!-- <li>
+                       <a class="ph"></a>
+                    </li> -->
+                    <!-- <li>
+                        <a class="gp"></a>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -310,6 +325,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="text">
                         <textarea name="message" value="Message:" placeholder="Your Message..."></textarea>
                     </div>
+                    <input type="hidden" name="_subject" value="linamy85.github.io New contact!" />
                     <div class="text">
                         <button type="submit">Submit</button>
                     </div>
