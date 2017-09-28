@@ -181,6 +181,11 @@ ul.hoby li {
     height: 100px;
 }
 
+.cs-skill img {
+    height: 100px;
+    margin: 6px 5px;
+}
+
 a.download {
     color: #fff;
     font-size: 20px;
