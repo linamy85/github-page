@@ -907,7 +907,8 @@ i.twit {
     margin-bottom: 1em;
 }
 
-.text input[type="text"] {
+.text input[type="text"],
+.text input[type="email"] {
     width: 50%;
     padding: 15px 10px;
     border: 1px solid #2980b9;
@@ -945,7 +946,7 @@ i.twit {
     -webkit-appearance: none;
 }
 
-.text input[type="submit"] {
+.text button[type="submit"] {
     background: #2980b9;
     color: #fff;
     padding: 10px 15px;
@@ -962,7 +963,7 @@ i.twit {
     text-transform: uppercase;
 }
 
-.text input[type="submit"]:hover {
+.text button[type="submit"]:hover {
     background: #6ab8ea;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -1066,7 +1067,7 @@ p.copyright a:hover {
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:991px) {
     .header-profile img {
         width: 60%;
         width: 60%;
@@ -1262,6 +1263,7 @@ p.copyright a:hover {
         height: 80px
     }
     .text input[type="text"],
+    .text input[type="email"],
     .text textarea {
         width: 80%;
     }
@@ -1428,7 +1430,8 @@ p.copyright a:hover {
         margin: 0em 0;
         padding: 0;
     }
-    .text input[type="text"] {
+    .text input[type="text"],
+    .text input[type="email"] {
         width: 90%;
         padding: 10px;
     }

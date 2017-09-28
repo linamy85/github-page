@@ -300,20 +300,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <div class="contact-form">
+                <form class="contact-form" method="POST" action="http://formspree.io/linamy85+form@gmail.com">
                     <div class="text">
-                        <input type="text" value="Your Name.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name..';}" />
+                        <input type="text" placeholder="Your Name..">
                     </div>
                     <div class="text">
-                        <input type="text" value="Your Email.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email..';}" />
+                        <input type="email" name="email" placeholder="Your Email..">
                     </div>
                     <div class="text">
-                        <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Your Message..</textarea>
+                        <textarea value="Message:" placeholder="Your Message..."></textarea>
                     </div>
                     <div class="text">
-                        <input type="submit" />
+                        <button type="submit">Submit</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
